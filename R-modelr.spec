@@ -4,7 +4,7 @@
 #
 Name     : R-modelr
 Version  : 0.1.2
-Release  : 11
+Release  : 12
 URL      : https://cran.r-project.org/src/contrib/modelr_0.1.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/modelr_0.1.2.tar.gz
 Summary  : Modelling Functions that Work with the Pipe
