@@ -4,16 +4,12 @@
 #
 Name     : R-modelr
 Version  : 0.1.4
-Release  : 19
+Release  : 20
 URL      : https://cran.r-project.org/src/contrib/modelr_0.1.4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/modelr_0.1.4.tar.gz
 Summary  : Modelling Functions that Work with the Pipe
 Group    : Development/Tools
 License  : GPL-3.0
-Requires: R-backports
-Requires: R-cli
-Requires: R-generics
-Requires: R-lme4
 BuildRequires : R-backports
 BuildRequires : R-broom
 BuildRequires : R-cli
@@ -36,10 +32,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552883796
+export SOURCE_DATE_EPOCH=1552893217
 
 %install
-export SOURCE_DATE_EPOCH=1552883796
+export SOURCE_DATE_EPOCH=1552893217
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
