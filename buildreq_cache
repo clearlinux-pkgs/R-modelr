@@ -1,5 +1,9 @@
 0.1.4
+R-backports
 R-broom
+R-cli
+R-generics
+R-lme4
 R-rstanarm
 R-tibble
 R-tidyr
