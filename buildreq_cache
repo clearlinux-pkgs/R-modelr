@@ -2,8 +2,11 @@
 R-backports
 R-broom
 R-cli
+R-dplyr
 R-generics
+R-glue
 R-lme4
 R-rstanarm
 R-tibble
 R-tidyr
+R-tidyselect

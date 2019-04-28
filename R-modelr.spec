@@ -4,20 +4,26 @@
 #
 Name     : R-modelr
 Version  : 0.1.4
-Release  : 22
+Release  : 23
 URL      : https://cran.r-project.org/src/contrib/modelr_0.1.4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/modelr_0.1.4.tar.gz
 Summary  : Modelling Functions that Work with the Pipe
 Group    : Development/Tools
 License  : GPL-3.0
+Requires: R-dplyr
+Requires: R-glue
+Requires: R-tidyselect
 BuildRequires : R-backports
 BuildRequires : R-broom
 BuildRequires : R-cli
+BuildRequires : R-dplyr
 BuildRequires : R-generics
+BuildRequires : R-glue
 BuildRequires : R-lme4
 BuildRequires : R-rstanarm
 BuildRequires : R-tibble
 BuildRequires : R-tidyr
+BuildRequires : R-tidyselect
 BuildRequires : buildreq-R
 
 %description
@@ -32,10 +38,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552893217
+export SOURCE_DATE_EPOCH=1556475262
 
 %install
-export SOURCE_DATE_EPOCH=1552893217
+export SOURCE_DATE_EPOCH=1556475262
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -71,7 +77,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc  modelr || :
+R CMD check --no-manual --no-examples --no-codoc modelr || :
 
 
 %files
