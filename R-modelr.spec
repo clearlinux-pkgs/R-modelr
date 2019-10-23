@@ -4,7 +4,7 @@
 #
 Name     : R-modelr
 Version  : 0.1.5
-Release  : 28
+Release  : 29
 URL      : https://cran.r-project.org/src/contrib/modelr_0.1.5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/modelr_0.1.5.tar.gz
 Summary  : Modelling Functions that Work with the Pipe
@@ -15,18 +15,24 @@ Requires: R-dplyr
 Requires: R-magrittr
 Requires: R-purrr
 Requires: R-rlang
-Requires: R-rstanarm
 Requires: R-tibble
 Requires: R-tidyr
+BuildRequires : R-backports
 BuildRequires : R-broom
+BuildRequires : R-cli
 BuildRequires : R-dplyr
+BuildRequires : R-generics
+BuildRequires : R-glue
+BuildRequires : R-lme4
 BuildRequires : R-magrittr
 BuildRequires : R-purrr
 BuildRequires : R-rlang
 BuildRequires : R-rstanarm
 BuildRequires : R-tibble
 BuildRequires : R-tidyr
+BuildRequires : R-tidyselect
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 # modelr <img src="man/figures/logo.png" align="right" />
@@ -40,10 +46,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1565323179
+export SOURCE_DATE_EPOCH=1571868575
 
 %install
-export SOURCE_DATE_EPOCH=1565323179
+export SOURCE_DATE_EPOCH=1571868575
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
