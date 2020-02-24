@@ -1,13 +1,3 @@
-0.1.5
-R-backports
-R-broom
-R-cli
-R-dplyr
-R-generics
-R-glue
+0.1.6
 R-lme4
 R-rstanarm
-R-tibble
-R-tidyr
-R-tidyselect
-util-linux
