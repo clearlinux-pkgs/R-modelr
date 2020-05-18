@@ -4,7 +4,7 @@
 #
 Name     : R-modelr
 Version  : 0.1.7
-Release  : 34
+Release  : 35
 URL      : https://cran.r-project.org/src/contrib/modelr_0.1.7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/modelr_0.1.7.tar.gz
 Summary  : Modelling Functions that Work with the Pipe
@@ -12,21 +12,17 @@ Group    : Development/Tools
 License  : GPL-3.0
 Requires: R-broom
 Requires: R-dplyr
-Requires: R-lme4
 Requires: R-magrittr
 Requires: R-purrr
 Requires: R-rlang
-Requires: R-rstanarm
 Requires: R-tibble
 Requires: R-tidyr
 Requires: R-tidyselect
 BuildRequires : R-broom
 BuildRequires : R-dplyr
-BuildRequires : R-lme4
 BuildRequires : R-magrittr
 BuildRequires : R-purrr
 BuildRequires : R-rlang
-BuildRequires : R-rstanarm
 BuildRequires : R-tibble
 BuildRequires : R-tidyr
 BuildRequires : R-tidyselect
@@ -45,10 +41,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1588306373
+export SOURCE_DATE_EPOCH=1589788945
 
 %install
-export SOURCE_DATE_EPOCH=1588306373
+export SOURCE_DATE_EPOCH=1589788945
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
